@@ -1312,7 +1312,7 @@ if(preg_match('/^createAccAmount(\d+)_(\d+)_(\d+)/',$userInfo['step'], $match) &
     
         • $remark \n " . ($botState['configLinkState'] != "off" && $serverType != "marzban"?"<code>$link</code>":"");
             if($botState['subLinkState'] == "on") $acc_text .= 
-            " \n• subscription : $subLink";
+            " \n• subscription : <code>$subLink</code>";
         
             $file = RandomString() .".png";
             
@@ -1751,9 +1751,10 @@ if(preg_match('/havePaiedWeSwap(.*)/',$data,$match)) {
 
 if($botState['subLinkState'] == "on") $acc_text .= "
 
-لینک زیر را در مرورگر باز کنید یا به صورت مستقیم به عنوان لینک اشتراک استفاده کنید
+• Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
 
-• subscription : $subLink
+
+• subscription : <code>$subLink</code>
         
         ";
               
@@ -2995,9 +2996,10 @@ if(preg_match('/payCustomWithWallet(.*)/',$data, $match)){
 • config : <code>$link</code>":"");
 if($botState['subLinkState'] == "on") $acc_text .= "
 
-لینک زیر را در مرورگر باز کنید یا به صورت مستقیم به عنوان لینک اشتراک استفاده کنید
+• Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
 
-• subscription : $subLink"; 
+
+• subscription : <code>$subLink</code>"; 
     
         $file = RandomString() .".png";
         $ecc = 'L';
@@ -3402,8 +3404,9 @@ if(preg_match('/accCustom(.*)/',$data, $match) and $text != $buttonValues['cance
 • config : <code>$vray_link</code>":"");
 if($botState['subLinkState'] == "on") $acc_text .= "
 
-لینک زیر را در مرورگر باز کنید یا به صورت مستقیم به عنوان لینک اشتراک استفاده کنید
-\n• subscription : $subLink";
+• Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
+
+\n• subscription : <code>$subLink</code>";
     
         $file = RandomString() .".png";
         $ecc = 'L';
@@ -3720,8 +3723,9 @@ if(preg_match('/payWithWallet(.*)/',$data, $match)){
 • config : <code>$link</code>":"");
 if($botState['subLinkState'] == "on") $acc_text .= "
 
-لینک زیر را در مرورگر باز کنید یا به صورت مستقیم به عنوان لینک اشتراک استفاده کنید
-\n• subscription : $subLink";
+• Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
+
+\n• subscription : <code>$subLink</code>";
             
                 $file = RandomString() .".png";
                 $ecc = 'L';
@@ -4250,8 +4254,9 @@ if(preg_match('/accept(.*)/',$data, $match) and $text != $buttonValues['cancel']
 • config : <code>$link</code>":"");
 if($botState['subLinkState'] == "on") $acc_text .= "
 
-لینک زیر را در مرورگر باز کنید یا به صورت مستقیم به عنوان لینک اشتراک استفاده کنید
-\n• subscription : $subLink";
+• Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
+
+\n• subscription : <code>$subLink</code>";
             
                 $file = RandomString() .".png";
                 $ecc = 'L';
@@ -5715,8 +5720,9 @@ if(preg_match('/freeTrial(\d+)_(?<buyType>\w+)/',$data,$match)) {
 • config : <code>$link</code>":"");
 if($botState['subLinkState'] == "on") $acc_text .= "
 
-لینک زیر را در مرورگر باز کنید یا به صورت مستقیم به عنوان لینک اشتراک استفاده کنید
-\n• subscription : $subLink";
+• Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
+
+\n• subscription : <code>$subLink</code>";
     
         $file = RandomString().".png";
         $ecc = 'L'; 
